@@ -298,3 +298,49 @@
 ======================
 [2018-08-04 17:28:46] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
 ======================
+[2018-08-04 22:49:09] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:49:25] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:49:33] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:49:53] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:50:31] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:50:36] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:50:41] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:50:44] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:50:47] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-04 22:50:50] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-05 15:14:50] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-05 21:57:39] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 41 
+======================
+[2018-08-05 22:05:17] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 41 
+======================
+[2018-08-05 22:05:17] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 41 
+======================
+[2018-08-05 22:31:38] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 41 
+======================
+[2018-08-05 22:35:57] Error text: Call to undefined function ishop\removeQueryString() | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 24 
+======================
+[2018-08-05 22:36:11] Error text: Call to undefined function ishop\removeQueryString() | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 24 
+======================
+[2018-08-05 22:36:26] Error text: Call to undefined function ishop\removeQueryString() | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 24 
+======================
+[2018-08-05 22:36:47] Error text: Call to undefined function ishop\removeQueryString() | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 24 
+======================
+[2018-08-05 22:36:54] Error text: Call to undefined function ishop\removeQueryString() | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 24 
+======================
+[2018-08-05 22:43:59] Error text: Call to undefined method app\controllers\PageController::getView() | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 33 
+======================
+[2018-08-05 22:45:00] Error text: Cant find view C:\OSPanel\domains\ishhop2.loc/app/views/Page/view.php | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\base\View.php | Line: 42 
+======================
+[2018-08-05 23:42:50] Error text: Class 'ishop\R' not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Db.php | Line: 14 
+======================
