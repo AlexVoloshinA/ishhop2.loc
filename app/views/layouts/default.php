@@ -14,7 +14,7 @@
 <body>
     <h1>Layout DEFAULT</h1>
 
-    <?php echo $content; ?>
+  
 
 
     <?php 
