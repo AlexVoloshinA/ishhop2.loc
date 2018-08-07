@@ -458,3 +458,9 @@
 ======================
 [2018-08-07 00:23:41] Error text: There is no connection with db | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Db.php | Line: 16 
 ======================
+[2018-08-07 14:03:46] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-07 14:22:45] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
+[2018-08-07 14:27:59] Error text: Page is not found | File: C:\OSPanel\domains\ishhop2.loc\vendor\ishop\core\Router.php | Line: 40 
+======================
