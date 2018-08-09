@@ -18,7 +18,7 @@ class App
     {
         session_start();
         $query = trim($_SERVER['QUERY_STRING'], '/');
-
+        
         self::$app = Registry::instance();
         $this->getParams();
         new ErrorHandler();

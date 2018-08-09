@@ -7,15 +7,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<?php echo $this->getMeta(); ?>
-<link href="../../../public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="../../../public/css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php 
+
+echo $this->getMeta(); ?>
+<link href="/public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<link href="../../../public/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 
-
+<link href="/public/css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body> 
 	<!--top-header-->
@@ -25,15 +28,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-6 top-header-left">
 					<div class="drop">
 						<div class="box">
-							<select tabindex="4" class="dropdown drop">
-								<option value="" class="label">Dollar :</option>
-								<option value="1">Dollar</option>
-								<option value="2">Euro</option>
+							<select tabindex="4" id="currency" >
+								<?php  new app\widgets\currency\Currency(); ?>
 							</select>
 						</div>
 						<div class="box1">
-							<select tabindex="4" class="dropdown">
-								<option value="" class="label">English :</option>
+							<select tabindex="4">
+								<option value="" >Language :</option>
 								<option value="1">English</option>
 								<option value="2">French</option>
 								<option value="3">German</option>
@@ -68,7 +69,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="header">
 				<div class="col-md-9 header-left">
-				<div class="top-nav">
+                    <div class="menu-container">
+                        <div class="menu">
+                            <?php new \app\widgets\menu\Menu([
+                                'tpl' => WWW . '/menu/menu.php',
+
+                            ]); ?>
+                        </div>
+                    </div>
+			     	<!-- <div class="top-nav">
 					<ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
 						<li class="grid"><a href="#">Men</a>
 							<div class="mepanel">
@@ -204,7 +213,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li class="grid"><a href="contact.html">Contact</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				<div class="clearfix"> </div>
 			</div>
 			<div class="col-md-3 header-right"> 
@@ -287,12 +296,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--footer-end-->	
     
 
-    <script src="../../../public/js/jquery-1.11.0.min.js"></script>
-    <script src="../../../public/js/simpleCart.min.js"> </script>
+    <script src="/public/js/jquery-1.11.0.min.js"></script>
+    <script src="/public/js/simpleCart.min.js"> </script>
     <script>$(document).ready(function(){$(".memenu").memenu();});</script>	
-    <script type="text/javascript" src="../../../public/js/memenu.js"></script>
+    <script type="text/javascript" src="/public/js/memenu.js"></script>
     <!--dropdown-->
-    <script src="../../../public/js/jquery.easydropdown.js"></script>	
+    <script src="/public/js/jquery.easydropdown.js"></script>	
     <script src="/public/js/responsiveslides.min.js"></script>
 			 <script>
 			    // You can also use "$(window).load(function() {"
@@ -313,6 +322,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			      });
 			
 			    });
-			  </script>		
+			  </script>
+    <script src="megamenu/js/megamenu.js"></script>
+    <script src="/public/js/main.js"></script>
 </body>
 </html>

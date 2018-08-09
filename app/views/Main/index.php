@@ -20,7 +20,9 @@
 			
 			<!--End-slider-script-->
     <!--about-starts-->
-    <?php if($brands): ?>
+    <?php 
+
+if($brands): ?>
 	<div class="about"> 
 		<div class="container">
 			<div class="about-top grid-1">
@@ -45,6 +47,7 @@
 	<!--product-starts-->
 
 	<?php if($hits): ?>
+	<?php $curr = ishop\App::$app->getProperty('currency');?>
 	<div class="product"> 
 		<div class="container">
 			<div class="product-top">
@@ -57,9 +60,9 @@
 								<h3><a href="product/<?php echo $hit->alias ?>"><?php echo $hit->title ?></a></h3>
 								<p>Explore Now</p>
 								<h4>
-									<a class="add-to-cart-link" href="cart/add?id=<?php echo $hit->id ?>"><i></i></a> <span class=" item_price">$ <?php echo $hit->price ?></span>
+									<a class="add-to-cart-link" href="cart/add?id=<?php echo $hit->id ?>"><i></i></a> <span class=" item_price"><?php echo $curr['symbol_left']; ?> <?php echo $hit->price * $curr['value'] ?><?php echo $curr['symbol_right']; ?></span>
 									<?php if($hit->old_price): ?>
-										<small><del><?php echo $hit->old_price ?></del></small>
+										<small><del><?php echo $curr['symbol_left']; ?><?php echo $hit->old_price * $curr['value']  ?><?php echo $curr['symbol_right']; ?></del></small>
 									<?php endif; ?>
 								</h4>
 							</div>
