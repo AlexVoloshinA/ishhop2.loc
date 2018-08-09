@@ -3069,3 +3069,19 @@ ul.tag-men {
 
 /*Iew styles */
 
+@media screen and (min-width: 1000px){
+	.quantity{
+		margin-top: 10px;
+	}
+	.group-flex{
+		display: flex;
+		align-items: center;
+	}
+
+	#productAdd{
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+}
+
