@@ -3,10 +3,6 @@
 namespace app\widgets\currency;
 
 use ishop\App;
-use ishop;
-use ishop\base\Controller;
-use app\models\AppModel;
-use app\widgets\currency\Currency;
 
 
 

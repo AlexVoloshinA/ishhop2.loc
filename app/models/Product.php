@@ -1,15 +1,44 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: avolo
- * Date: 10-Aug-18
- * Time: 00:27
- */
 
 namespace app\models;
 
 
-class Product
+class Product extends AppModel
 {
+    public function setRecentlyViewed($id)
+    {
+        $recentlyViewed = $this->getAllRecentlyViewed();
+        if(!$recentlyViewed){
+            setcookie('recentlyViewed', $id, time() + 68000, '/');
+        } else {
+            $recentlyViewed = explode('.', $recentlyViewed);
+            if(!in_array($id, $recentlyViewed)){
+                $recentlyViewed[] = $id;
+                $recentlyViewed = implode('.', $recentlyViewed);
+                setcookie('recentlyViewed', $recentlyViewed, time() + 68000, '/');
+            }
 
+        }
+
+    }
+
+    public function getRecentlyViewed()
+    {
+        if(!empty($_COOKIE['recentlyViewed'])){
+            $recentlyViewed = $_COOKIE['recentlyViewed'];
+            $recentlyViewed = explode('.', $recentlyViewed);
+            return array_slice($recentlyViewed, -3);
+
+        }
+        return false;
+    }
+
+    public function getAllRecentlyViewed()
+    {
+        if(!empty($_COOKIE['recentlyViewed'])){
+            return $_COOKIE['recentlyViewed'];
+        }else {
+            return false;
+        }
+    }
 }
