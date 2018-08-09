@@ -141,9 +141,9 @@
                         <?php foreach ($related as $item):?>
                         <div class="col-md-4 product-left p-left">
                             <div class="product-main simpleCart_shelfItem">
-                                <a href="product/<?=$item['alias'];?>" class="mask"><img class="img-responsive zoom-img" src="/images/<?=$item['img'];?>" alt="" /></a>
+                                <a href="/product/<?=$item['alias'];?>" class="mask"><img class="img-responsive zoom-img" src="/images/<?=$item['img'];?>" alt="" /></a>
                                 <div class="product-bottom">
-                                    <h3><a href="product/<?=$item['alias'];?>"><?=$item['title'];?></a></h3>
+                                    <h3><a href="/product/<?=$item['alias'];?>"><?=$item['title'];?></a></h3>
                                     <p>Explore Now</p>
                                     <h4>
                                         <a  class="item_add add-to-cart-link" href="cart/add?id=<?=$item['id'];?>" data-id="<?=$item['id'];?>"><i></i></a>
@@ -171,9 +171,9 @@
                             <?php foreach ($recentlyViewed as $item):?>
                                 <div class="col-md-4 product-left p-left">
                                     <div class="product-main simpleCart_shelfItem">
-                                        <a href="product/<?=$item['alias'];?>" class="mask"><img class="img-responsive zoom-img" src="/images/<?=$item['img'];?>" alt="" /></a>
+                                        <a href="/product/<?=$item['alias'];?>" class="mask"><img class="img-responsive zoom-img" src="/images/<?=$item['img'];?>" alt="" /></a>
                                         <div class="product-bottom">
-                                            <h3><a href="product/<?=$item['alias'];?>"><?=$item['title'];?></a></h3>
+                                            <h3><a href="/product/<?=$item['alias'];?>"><?=$item['title'];?></a></h3>
                                             <p>Explore Now</p>
                                             <h4>
                                                 <a  class="item_add add-to-cart-link" href="cart/add?id=<?=$item['id'];?>" data-id="<?=$item['id'];?>"><i></i></a>
