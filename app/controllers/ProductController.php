@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 
+use app\models\Breadcrumbs;
 use app\models\Product;
 
 class ProductController extends AppController
@@ -14,8 +15,6 @@ class ProductController extends AppController
         if(!$product){
             throw new \Exception('Cant found page', 404);
         }
-
-        // BREADCRUMBS
 
         // connected products
 
@@ -38,8 +37,12 @@ class ProductController extends AppController
         $gallery =\R::findAll('gallery', 'product_id = ?', [$product->id]);
         //debug($gallery);
         //modifcations
+        $mods = \R::findAll('modification', 'product_id = ?', [$product->id]);
+        //debug($mods);
+        // BREADCRUMBS
+        $breadcrumbs = Breadcrumbs::getBreadcrumbs($product->category_id, $product->title);
 
         $this->setMeta($product->title, $product->description, $product->keywords);
-        $this->set(compact('product', 'related', 'gallery', 'recentlyViewed'));
+        $this->set(compact('product', 'related', 'gallery', 'recentlyViewed', 'breadcrumbs', 'mods'));
     }
 }

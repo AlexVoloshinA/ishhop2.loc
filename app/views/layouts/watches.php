@@ -158,7 +158,14 @@ echo $this->getMeta(); ?>
 			</div>
 		</div>
 	</div>
-    <!--footer-end-->	
+    <!--footer-end-->
+    <?php $curr = \ishop\App::$app->getProperty('currency'); ?>
+    <script>
+        var path = '<?=PATH;?>',
+            course = <?=$curr['value'];?>,
+            symbolLeft = '<?=$curr['symbol_left'];?>',
+            symbolRight = '<?=$curr['symbol_right'];?>'
+    </script>
     
 
     <script src="/public/js/jquery-1.11.0.min.js"></script>
@@ -200,7 +207,7 @@ echo $this->getMeta(); ?>
             });
         });
     </script>
-    <script src="js/jquery.easydropdown.js"></script>
+    <script src="/js/jquery.easydropdown.js"></script>
     <script type="text/javascript">
         $(function() {
 
